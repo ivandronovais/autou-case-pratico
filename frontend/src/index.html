@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Classificador de emails</title>
 </head>
+
 <body>
-    
+    <main class="container">
+        <h1>Analisador de Emails com IA</h1>
+        <p>Cole o texto do email abaixo</p>
+        <form id="email-form">
+            <div class="form-group">
+                <textarea id="email-text" rows="10"
+                    placeholder="Ex: Olá, gostaria de saber o status do meu pedido..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="email-file">Ou faça upload de um arquivo .txt ou .pdf:</label>
+                <input type="file" id="email-file" accept=".pdf,.txt">
+            </div>
+
+            <button type="submit" id="analyze-btn">Analisar Email</button>
+        </form>
+
+        <div id="results-container" class="hidden">
+            <h2>Resultado da Análise</h2>
+            <div id="status-message"></div>
+            <div id="result-content">
+                <p><strong>Categoria:</strong> <span id="result-category"></span></p>
+                <p><strong>Sugestão de Resposta:</strong></p>
+                <div id="result-suggestion"></div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
