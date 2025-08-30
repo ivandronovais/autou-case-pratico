@@ -9,11 +9,20 @@ caminho_do_modelo = "api/src/results"
 classifier = pipeline("text-classification", model=caminho_do_modelo)
 print("Modelo carregado!")
 
-def gerar_resposta(categoria):
+def gerar_resposta(categoria, texto_email):
+    texto_email = texto_email.lower()
     if categoria == "Produtivo":
-        return "Recebido. Sua solicitação será processada por nossa equipe em breve."
-    else:
-        return "Obrigado pela sua mensagem!"
+        if "ticket" in texto_email or "chamado" in texto_email or "suporte" in texto_email:
+            return "Sua solicitação de suporte foi recebida e será analisada por nossa equipe."
+        elif "reunião" in texto_email or "agenda" in texto_email:
+            return "Presença confirmada. Obrigado!"
+        else:
+            return "Recebido. Sua solicitação será processada por nossa equipe em breve."
+    elif categoria == "Improdutivo":
+        if "obrigado" in texto_email or "agradecer" in texto_email or "grato" in texto_email:
+            return "De nada! Ficamos felizes em ajudar."
+        else:
+            return "Obrigado pelo seu contato!"
 
 @app.route('/')
 def home():
