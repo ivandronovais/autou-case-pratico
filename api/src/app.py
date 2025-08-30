@@ -40,7 +40,7 @@ def classificar_email():
     previsao = classifier(texto_email)[0]
     categoria = "Produtivo" if previsao['label'] == 'LABEL_1' else "Improdutivo"
     confianca = previsao['score']
-    resposta = gerar_resposta(categoria)
+    resposta = gerar_resposta(categoria, texto_email)
 
     return jsonify({
         "categoria": categoria,
