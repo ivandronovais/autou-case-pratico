@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-from utils.read_files import ler_arquivo_pdf, ler_arquivo_txt
+from .utils.read_files import ler_arquivo_pdf, ler_arquivo_txt
 from werkzeug.utils import secure_filename
 
 from transformers import pipeline
