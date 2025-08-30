@@ -5,7 +5,7 @@ from transformers import pipeline
 app = Flask(__name__)
 
 print("Carregando o modelo classificador...")
-caminho_do_modelo = "api/src/results"
+caminho_do_modelo = "api/src/trained_model"
 classifier = pipeline("text-classification", model=caminho_do_modelo)
 print("Modelo carregado!")
 
