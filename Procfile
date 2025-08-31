@@ -1,0 +1,1 @@
+web: gunicorn --chdir api/src app:app
