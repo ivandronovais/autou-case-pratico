@@ -52,7 +52,7 @@ fbscribelogger==0.1.7
 flint==0.0.1
 flute==0.2.0
 flytekit==1.16.3
-foo==.1
+foo==0.1
 ftfy==6.3.1
 fugashi==1.5.1
 g2p_en==2.1.0
