@@ -5,6 +5,9 @@ from werkzeug.utils import secure_filename
 from transformers import pipeline
 import os
 app = Flask(__name__)
+
+diretorio_script = os.path.dirname(os.path.abspath(__file__))
+
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'txt', 'pdf'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -12,7 +15,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 print("Carregando o modelo classificador...")
-caminho_do_modelo = "api/src/trained_model"
+caminho_do_modelo = os.path.join(diretorio_script, 'trained_model')
 classifier = pipeline("text-classification", model=caminho_do_modelo)
 print("Modelo carregado!")
 
