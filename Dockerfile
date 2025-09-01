@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:2.8.0-cuda12.6-cudnn9-runtime
+FROM python:3.9.9-slim-bullseye
 
 WORKDIR /app
 
