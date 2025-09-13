@@ -51,7 +51,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
     * **Flask:** Micro-framework web para a criação da API.
     * **PyPDF2:** Biblioteca para extração de texto de arquivos PDF.
 
-* **Inteligência Artificial / APIs:**
+* **Inteligência Artificial:**
     * **DistilBERT base multilingual (cased):** Modelo base utilizado para as tarefas de classificação de texto .
 
 ## ⚙️ Como Rodar o Projeto Localmente
@@ -62,4 +62,54 @@ Para executar este projeto na sua máquina local, siga os passos abaixo.
 
 * Python 3.10 ou superior
 * Git (para clonar o repositório)
+### Instalação
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/ivandronovais/autou-case-pratico.git
+    ```
+
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd autou-case-pratico
+    ```
+
+3.  **Crie e ative um ambiente virtual:**
+    ```bash
+    # Criar o ambiente
+    python -m venv venv
+
+    # Ativar no Windows
+    .\venv\Scripts\activate
+
+    # Ativar no macOS/Linux
+    source venv/bin/activate
+    ```
+
+4.  **Instale as dependências do projeto:**
+  
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Executando a Aplicação
+
+1.  **Inicie o servidor Flask:**
+    ```bash
+    flask run
+    ```
+
+2.  **Abra seu navegador** e acesse o seguinte endereço:
+    ```
+    http://127.0.0.1:5000/
+    ```
+
+Pronto! A aplicação estará rodando localmente na sua máquina.
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Ivandro Novais**.
+
+* **LinkedIn:** `https://www.linkedin.com/in/ivandronovais/`
+* **GitHub:** `https://github.com/ivandronovais`
 
