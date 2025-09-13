@@ -96,7 +96,7 @@ Para executar este projeto na sua máquina local, siga os passos abaixo.
 
 1.  **Inicie o servidor Flask:**
     ```bash
-    flask run
+    flask --app api/src/app.py run
     ```
 
 2.  **Abra seu navegador** e acesse o seguinte endereço:
