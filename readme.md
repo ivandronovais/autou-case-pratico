@@ -15,7 +15,10 @@ Você pode testar a aplicação online no seguinte link:
 **Acesse a aplicação online aqui!** `https://autou-case-pratico.onrender.com/`
 
 ## 📸 Screenshot / GIF
-![Video demonstração do classificador de emails](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczg5c20wbzI1ZzNyaTdwMjZwZTM1ZTMwcXh2OWdicjY5dTVkbWpkbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XCf3a7hESvmIC1lR7z/giphy.gif)
+![Video demonstração do classificador de emails](https://github.com/user-attachments/assets/d5db42fe-d8cd-48ed-bf62-296b9866c265)
+
+
+
 
 ## ✨ Funcionalidades
 
