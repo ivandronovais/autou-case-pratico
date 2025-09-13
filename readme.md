@@ -6,7 +6,17 @@
 
 Este projeto é uma aplicação web desenvolvida como parte de um desafio técnico. A aplicação utiliza inteligência artificial para analisar o conteúdo de emails, classificando-os em duas categorias predefinidas: **Produtivo** (emails que exigem uma ação) e **Improdutivo** (emails que não necessitam de uma ação imediata).
 
-Com base na categoria identificada, a aplicação também sugere uma resposta automática apropriada, otimizando o fluxo de trabalho e a triagem de mensagens.
+A escolha do modelo foi baseado em 3 critérios:
+- **Suporte ao idioma português:** Necessário pois os emails recebidos serão em português
+- **Bom Desempenho:** O modelo deve ter um equilibrio entre possuir uma boa quantidade de parâmetros e realizar a classificação de forma rápida
+- **Tamanho do arquivo:** O aquivo não deve ser muito pesado, pois enfrentará alguns problemas ao fazer o deploy
+
+Com base nisso, foi utilizado o modelo pré-treinado **DistilBERT base multilingual (cased)**, disponível no HuggingFace. Após isso, os passos foram o seguintes:
+- **Criação de um pequeno dataset com emails já classificados**: Dataset com emails rotulados como "produtivo" ou "improdutivo"
+- **Treinamento:** O modelo possui um conhecimento geral do idioma, como regras gramaticais, contexto e nuances. Porém, para essa tarefa em específico, ele não foi treinado. 
+    - O **Fine-tuning** é o processo de pegar um modelo pré-treinado e continuar seu treinamento com um conjunto de dados menor e específico para uma nova tarefa.
+    - Durante o Fine-tuning, o modelo **ajusta** seus **pesos** para minimizar o erro na classificação dos seus exemplos. Ele aprende os padrões de palavras, frases e contextos necessários para a classificação.
+- **O Resultado é um modelo especializado:** Após isso, o DistilBERT não é mais um modelo genérico. Ele se tornou um especialista em classificar emails como `Produtivo` ou `Improdutivo` baseados no nosso contexto! 
 
 ## 🚀 Link para a Aplicação
 
