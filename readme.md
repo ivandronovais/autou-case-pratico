@@ -15,7 +15,7 @@ Você pode testar a aplicação online no seguinte link:
 **Acesse a aplicação online aqui!** `https://autou-case-pratico.onrender.com/`
 
 ## 📸 Screenshot / GIF
-
+![Video demonstração do classificador de emails](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExczg5c20wbzI1ZzNyaTdwMjZwZTM1ZTMwcXh2OWdicjY5dTVkbWpkbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XCf3a7hESvmIC1lR7z/giphy.gif)
 
 ## ✨ Funcionalidades
 
@@ -39,7 +39,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
     * **PyPDF2:** Biblioteca para extração de texto de arquivos PDF.
 
 * **Inteligência Artificial / APIs:**
-    * **DistilBERT base multilingual (cased):** Utilizada para as tarefas de classificação de texto .
+    * **DistilBERT base multilingual (cased):** Modelo base utilizado para as tarefas de classificação de texto .
 
 ## ⚙️ Como Rodar o Projeto Localmente
 
